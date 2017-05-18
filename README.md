@@ -1,6 +1,6 @@
-# Addi's Ansible Modules
+# Addi's Ansible Playbooks
 
-Please check the individual README files in the module directories.
+Please check the individual README files in the roles directories.
 
 Enjoy life
 Addi
