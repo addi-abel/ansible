@@ -1,0 +1,6 @@
+# all hosts
+# ---------
+systems        ansible_host=138.201.41.157
+
+[all_servers]
+systems

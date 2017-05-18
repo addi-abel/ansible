@@ -1,0 +1,6 @@
+---
+-
+  name:  'Install the Puppet Agent'
+  hosts: 'all_servers'
+  roles:
+    - linux_puppetagent

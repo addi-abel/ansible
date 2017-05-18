@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+#
+##  ansible_run  on  test environment
+#
+
+ansible-playbook -i ./inventories/test/hosts $@
