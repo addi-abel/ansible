@@ -1,13 +1,9 @@
 ---
 -
     name:          'Install the Puppet Agent'
-    become:        true
-    become_method: sudo
     yum:           name=puppet-agent state=present
 -
     name:          'Configure the Puppet Agnet'
-    become:        true
-    become_method: sudo
     template:
       src:         'puppetagent.conf.j2'
       dest:        '/etc/puppetlabs/puppet/puppet.conf'
@@ -16,6 +12,4 @@
       mode:        '0644'
 -
     name:          'Enable Puppet Agent'
-    become:        true
-    become_method: sudo
     service:       name=puppet state=started enabled=yes

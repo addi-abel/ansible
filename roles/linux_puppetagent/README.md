@@ -4,7 +4,7 @@
 
 ## Requirements
 
-* Puppet  >=  [4.0](https://puppet.com/blog/say-hello-to-open-source-puppet-4) Measter somewhere on the network.
+* Puppet  >=  [4.0](https://puppet.com/blog/say-hello-to-open-source-puppet-4) Master somewhere on the network.
 * The [yum repository config](https://yum.puppetlabs.com/) must be installed.
 
 ## Installs
@@ -16,6 +16,7 @@
 * a basic cofiguration in: /etc/puppetlabs/puppet/puppet.conf
 
 
+-----
 
 Enjoy life
 Addi

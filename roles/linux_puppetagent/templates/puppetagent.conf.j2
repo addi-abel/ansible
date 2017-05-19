@@ -3,7 +3,10 @@
 #
 
 [main]
-server = puppet
+
+{% for item in hostvars[inventory_hostname].groups.puppetmaster %}
+server = {{ item }}.{{ domain_realm }}
+{% endfor %}
 environment = production
 runinterval = 15m
 noop = true

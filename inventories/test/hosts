@@ -1,6 +1,23 @@
 # all hosts
 # ---------
-systems        ansible_host=138.201.41.157
+               
+systems         ansible_host=138.201.41.157
+phoenix         ansible_host=138.201.57.75
+sphinx          ansible_host=136.243.156.71
+automatix       ansible_host=144.76.75.46
 
-[all_servers]
+
+[all_servers:children]
+linux
+
+[linux:children]
+centos
+
+[centos:children]
+centos7
+
+[centos7]
 systems
+
+[puppetmaster]
+phoenix
