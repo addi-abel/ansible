@@ -1,7 +1,9 @@
 ---
 -
     name:          'Install the Puppet Agent'
-    yum:           name=puppet-agent state=present
+    yum:
+      name:        'puppet-agent'
+      state:       'present'
 -
     name:          'Configure the Puppet Agnet'
     template:
@@ -12,4 +14,7 @@
       mode:        '0644'
 -
     name:          'Enable Puppet Agent'
-    service:       name=puppet state=started enabled=yes
+    service:
+      name         'puppet'
+      state        'started'
+      enabled      'yes'

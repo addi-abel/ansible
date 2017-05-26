@@ -1,4 +1,5 @@
 .vagrant
+.retry
 .librarian
 .tmp
 .gem
