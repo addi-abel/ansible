@@ -1,0 +1,6 @@
+---
+-
+  name:  'Install the Nagios Agent'
+  hosts: 'linux'
+  roles:
+    - linux_nagiosagent
