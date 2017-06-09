@@ -1,0 +1,17 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "environments/%{::environment}/hiera/nodes/%{::clientcert}"
+  - "environments/%{::environment}/hiera/role/%{::role}/environment/%{::tier}"
+  - "environments/%{::environment}/hiera/role/%{::role}/role"
+  - "environments/%{::environment}/hiera/environment/%{::tier}"
+  - "environments/%{::environment}/hiera/common"
+
+:logger: console
+
+:yaml:
+  :datadir: "/etc/puppetlabs/code"
+
+#:merge_behavior: deeper
